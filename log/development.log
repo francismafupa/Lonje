@@ -1,0 +1,267 @@
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (305.8ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (324.0ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (19.7ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Rails::InfoController#properties (for 127.0.0.1 at 2013-10-10 15:37:57) [GET]
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Completed in 130ms (View: 17, DB: 3) | 200 OK [http://localhost/rails/info/properties]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2013-10-10 16:47:08) [GET]
+Rendering home/index
+Completed in 111ms (View: 107, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2013-10-10 16:50:16) [GET]
+Rendering home/index
+Completed in 18ms (View: 15, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2013-10-10 16:59:15) [GET]
+Rendering home/index
+Completed in 15ms (View: 11, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2013-10-10 17:00:56) [GET]
+Rendering home/index
+Completed in 14ms (View: 10, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2013-10-10 17:01:11) [GET]
+Rendering home/index
+Completed in 14ms (View: 10, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2013-10-10 17:13:12) [GET]
+Rendering home/index
+Completed in 14ms (View: 10, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2013-10-10 17:13:14) [GET]
+Rendering home/index
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2013-10-10 17:24:30) [GET]
+Rendering home/index
+Completed in 19ms (View: 15, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (15.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePeople (20131010160406)
+  [4;36;1mSQL (334.6ms)[0m   [0;1mCREATE TABLE `people` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `first_name` varchar(255), `last_name` varchar(255), `dob` datetime, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (110.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20131010160406')[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (16.2ms)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mdescribe `people`[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mSHOW KEYS FROM `people`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2013-10-10 19:58:43) [GET]
+Rendering home/index
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2013-10-10 19:58:49) [GET]
+Rendering home/index
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2013-10-10 20:00:06) [GET]
+Rendering home/index
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2013-10-10 20:00:08) [GET]
+Rendering home/index
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2013-10-10 20:03:28) [GET]
+Rendering home/index
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2013-10-10 20:04:11) [GET]
+
+ActionController::RoutingError (No route matches "/person/new" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonController#new (for 127.0.0.1 at 2013-10-10 20:07:56) [GET]
+  [4;36;1mPerson Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+Rendering person/new
+Completed in 147ms (View: 134, DB: 2) | 200 OK [http://localhost/person/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonController#new (for 127.0.0.1 at 2013-10-10 20:08:52) [GET]
+  [4;35;1mPerson Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `people`[0m
+Rendering person/new
+Completed in 31ms (View: 19, DB: 3) | 200 OK [http://localhost/person/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonController#create (for 127.0.0.1 at 2013-10-10 20:09:23) [POST]
+  Parameters: {"commit"=>"create person", "authenticity_token"=>"16wOrjs2alTND/zaBOr2Ey2JhXcv3G9+Hj85eJIPHOw=", "person"=>{"first_name"=>"Rose ", "dob"=>"1988/05/11", "last_name"=>"Manda"}}
+  [4;36;1mPerson Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mBEGIN[0m
+  [4;36;1mPerson Create (49.1ms)[0m   [0;1mINSERT INTO `people` (`updated_at`, `first_name`, `last_name`, `dob`, `created_at`) VALUES('2013-10-10 18:09:23', 'Rose ', 'Manda', '1988-05-11 00:00:00', '2013-10-10 18:09:23')[0m
+  [4;35;1mSQL (136.4ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/person
+Completed in 449ms (DB: 188) | 302 Found [http://localhost/person/create]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonController#index (for 127.0.0.1 at 2013-10-10 20:09:24) [GET]
+  [4;36;1mPerson Load (17.4ms)[0m   [0;1mSELECT * FROM `people` [0m
+Rendering person/index
+  [4;35;1mPerson Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `people`[0m
+Completed in 56ms (View: 27, DB: 21) | 200 OK [http://localhost/person]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonController#new (for 127.0.0.1 at 2013-10-10 20:09:28) [GET]
+  [4;36;1mPerson Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+Rendering person/new
+Completed in 102ms (View: 89, DB: 3) | 200 OK [http://localhost/person/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonController#create (for 127.0.0.1 at 2013-10-10 20:09:57) [POST]
+  Parameters: {"commit"=>"create person", "authenticity_token"=>"16wOrjs2alTND/zaBOr2Ey2JhXcv3G9+Hj85eJIPHOw=", "person"=>{"first_name"=>"Daud", "dob"=>"2000/11/11", "last_name"=>"Nkhoma"}}
+  [4;35;1mPerson Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPerson Create (1.2ms)[0m   [0mINSERT INTO `people` (`updated_at`, `first_name`, `last_name`, `dob`, `created_at`) VALUES('2013-10-10 18:09:57', 'Daud', 'Nkhoma', '2000-11-11 00:00:00', '2013-10-10 18:09:57')[0m
+  [4;36;1mSQL (52.3ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/person
+Completed in 76ms (DB: 56) | 302 Found [http://localhost/person/create]
+  [4;35;1mSQL (0.4ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonController#index (for 127.0.0.1 at 2013-10-10 20:09:57) [GET]
+  [4;35;1mPerson Load (0.7ms)[0m   [0mSELECT * FROM `people` [0m
+Rendering person/index
+  [4;36;1mPerson Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+Completed in 22ms (View: 10, DB: 3) | 200 OK [http://localhost/person]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonController#new (for 127.0.0.1 at 2013-10-10 20:11:34) [GET]
+  [4;35;1mPerson Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `people`[0m
+Rendering person/new
+Completed in 23ms (View: 10, DB: 2) | 200 OK [http://localhost/person/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonController#create (for 127.0.0.1 at 2013-10-10 20:12:00) [POST]
+  Parameters: {"commit"=>"create person", "authenticity_token"=>"16wOrjs2alTND/zaBOr2Ey2JhXcv3G9+Hj85eJIPHOw=", "person"=>{"first_name"=>"Tamanda", "dob"=>"1987/11/12", "last_name"=>"Nkhoma"}}
+  [4;36;1mPerson Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mBEGIN[0m
+  [4;36;1mPerson Create (23.0ms)[0m   [0;1mINSERT INTO `people` (`updated_at`, `first_name`, `last_name`, `dob`, `created_at`) VALUES('2013-10-10 18:12:00', 'Tamanda', 'Nkhoma', '1987-11-12 00:00:00', '2013-10-10 18:12:00')[0m
+  [4;35;1mSQL (88.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/person
+Completed in 133ms (DB: 114) | 302 Found [http://localhost/person/create]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonController#index (for 127.0.0.1 at 2013-10-10 20:12:00) [GET]
+  [4;36;1mPerson Load (0.7ms)[0m   [0;1mSELECT * FROM `people` [0m
+Rendering person/index
+  [4;35;1mPerson Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `people`[0m
+Completed in 24ms (View: 11, DB: 4) | 200 OK [http://localhost/person]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonController#edit (for 127.0.0.1 at 2013-10-10 20:12:06) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mPerson Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mPerson Load (30.5ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 2) [0m
+Rendering person/edit
+Completed in 68ms (View: 24, DB: 33) | 200 OK [http://localhost/person/edit/2]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonController#update (for 127.0.0.1 at 2013-10-10 20:12:19) [POST]
+  Parameters: {"commit"=>"update person", "authenticity_token"=>"16wOrjs2alTND/zaBOr2Ey2JhXcv3G9+Hj85eJIPHOw=", "person"=>{"id"=>"2", "first_name"=>"Daud", "dob"=>"2000-11-11 00:00:00", "last_name"=>"Nkhata"}}
+  [4;36;1mPerson Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mPerson Load (0.3ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 2) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPerson Update (42.4ms)[0m   [0mUPDATE `people` SET `updated_at` = '2013-10-10 18:12:19', `last_name` = 'Nkhata' WHERE `id` = 2[0m
+  [4;36;1mSQL (49.7ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/person
+Completed in 115ms (DB: 95) | 302 Found [http://localhost/person/update]
+  [4;35;1mSQL (0.4ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonController#index (for 127.0.0.1 at 2013-10-10 20:12:19) [GET]
+  [4;35;1mPerson Load (0.7ms)[0m   [0mSELECT * FROM `people` [0m
+Rendering person/index
+  [4;36;1mPerson Columns (2.7ms)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+Completed in 27ms (View: 13, DB: 4) | 200 OK [http://localhost/person]
