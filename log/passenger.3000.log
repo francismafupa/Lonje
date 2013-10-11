@@ -1,0 +1,35 @@
+[ 2013-10-11 22:23:14.9887 16007/b749a700 agents/Watchdog/Main.cpp:485 ]: Options: { 'analytics_log_user' => 'francis', 'cleanup_pidfiles' => 'L3RtcC9wYXNzZW5nZXItc3RhbmRhbG9uZS42d3ppZi90ZW1wX2Rpcl90b3VjaGVyLnBpZA==', 'default_group' => 'francis', 'default_python' => 'python', 'default_ruby' => '/usr/bin/ruby1.8', 'default_user' => 'francis', 'log_level' => '0', 'max_instances_per_app' => '0', 'max_pool_size' => '6', 'passenger_root' => '/tmp/passenger-standalone.6wzif/locations.ini', 'pool_idle_time' => '300', 'prestart_urls' => 'aHR0cDovLzAuMC4wLjA6MzAwMAA=', 'temp_dir' => '/tmp', 'union_station_gateway_address' => 'gateway.unionstationapp.com', 'union_station_gateway_port' => '443', 'user_switching' => 'false', 'web_server_pid' => '16006', 'web_server_type' => 'nginx', 'web_server_worker_gid' => '-1', 'web_server_worker_uid' => '-1' }
+[ 2013-10-11 22:23:15.0068 16010/b7464700 agents/HelperAgent/Main.cpp:619 ]: PassengerHelperAgent online, listening at unix:/tmp/passenger.1.0.16006/generation-0/request
+[ 2013-10-11 22:23:15.0947 16015/b6b1e700 agents/LoggingAgent/Main.cpp:318 ]: PassengerLoggingAgent online, listening at unix:/tmp/passenger.1.0.16006/generation-0/logging
+[ 2013-10-11 22:23:15.0984 16007/b749a700 agents/Watchdog/Main.cpp:669 ]: All Phusion Passenger agents started!
+[ 2013-10-11 22:23:17.3392 16010/b737eb40 Pool2/Spawner.h:738 ]: [App 16043 stdout] 
+[ 2013-10-11 22:23:17.4650 16010/b733db40 Pool2/Spawner.h:159 ]: [App 16043 stderr] *** Phusion Passenger: no passenger_native_support.so found for the current Ruby interpreter. Downloading precompiled binary from the Phusion server (set PASSENGER_DOWNLOAD_NATIVE_SUPPORT_BINARY=0 to disable)...
+[ 2013-10-11 22:23:17.4653 16010/b733db40 Pool2/Spawner.h:151 ]: [App 16043 stderr] 
+[ 2013-10-11 22:23:17.4897 16010/b733db40 Pool2/Spawner.h:159 ]: [App 16043 stderr] Attempting to download https://oss-binaries.phusionpassenger.com/binaries/passenger/by_release/4.0.20/rubyext-ruby-1.8.7-athlon-linux.tar.gz into /tmp/passenger-native-support-1rrnnab
+[ 2013-10-11 22:23:17.5228 16010/b733db40 Pool2/Spawner.h:159 ]: [App 16043 stderr] --2013-10-11 22:23:17--  https://oss-binaries.phusionpassenger.com/binaries/passenger/by_release/4.0.20/rubyext-ruby-1.8.7-athlon-linux.tar.gz
+[ 2013-10-11 22:23:17.6383 16010/b733db40 Pool2/Spawner.h:159 ]: [App 16043 stderr] Resolving oss-binaries.phusionpassenger.com (oss-binaries.phusionpassenger.com)... 
+[ 2013-10-11 22:23:23.2201 16010/b733db40 Pool2/Spawner.h:159 ]: [App 16043 stderr] 109.107.35.58
+[ 2013-10-11 22:23:23.2204 16010/b733db40 Pool2/Spawner.h:151 ]: [App 16043 stderr] 
+[ 2013-10-11 22:23:23.2206 16010/b733db40 Pool2/Spawner.h:159 ]: [App 16043 stderr] Connecting to oss-binaries.phusionpassenger.com (oss-binaries.phusionpassenger.com)|109.107.35.58|:443... 
+[ 2013-10-11 22:23:23.4971 16010/b733db40 Pool2/Spawner.h:159 ]: [App 16043 stderr] connected.
+[ 2013-10-11 22:23:24.2079 16010/b733db40 Pool2/Spawner.h:159 ]: [App 16043 stderr] HTTP request sent, awaiting response... 
+[ 2013-10-11 22:23:24.5500 16010/b733db40 Pool2/Spawner.h:159 ]: [App 16043 stderr] 404 Not Found
+[ 2013-10-11 22:23:24.5501 16010/b733db40 Pool2/Spawner.h:159 ]: [App 16043 stderr] 2013-10-11 22:23:24 ERROR 404: Not Found.
+[ 2013-10-11 22:23:24.5502 16010/b733db40 Pool2/Spawner.h:159 ]: [App 16043 stderr] 
+[ 2013-10-11 22:23:24.5543 16010/b733db40 Pool2/Spawner.h:159 ]: [App 16043 stderr] *** Phusion Passenger: no passenger_native_support.so found for the current Ruby interpreter. Compiling one (set PASSENGER_COMPILE_NATIVE_SUPPORT_BINARY=0 to disable)...
+[ 2013-10-11 22:23:24.5545 16010/b733db40 Pool2/Spawner.h:159 ]: [App 16043 stderr] # mkdir -p /tmp/passenger-standalone.6wzif/locations.ini/buildout/ruby/ruby-1.8.7-athlon-linux
+[ 2013-10-11 22:23:24.5545 16010/b733db40 Pool2/Spawner.h:159 ]: [App 16043 stderr] Not a valid directory. Trying a different one...
+[ 2013-10-11 22:23:24.5545 16010/b733db40 Pool2/Spawner.h:159 ]: [App 16043 stderr] -------------------------------
+[ 2013-10-11 22:23:24.5546 16010/b733db40 Pool2/Spawner.h:159 ]: [App 16043 stderr] # mkdir -p /home/francis/.passenger/native_support/4.0.20/ruby-1.8.7-athlon-linux
+[ 2013-10-11 22:23:24.5547 16010/b733db40 Pool2/Spawner.h:159 ]: [App 16043 stderr] # cd /home/francis/.passenger/native_support/4.0.20/ruby-1.8.7-athlon-linux
+[ 2013-10-11 22:23:24.5547 16010/b733db40 Pool2/Spawner.h:159 ]: [App 16043 stderr] # /usr/bin/ruby1.8 '/usr/lib/ruby/gems/1.8/gems/passenger-4.0.20/ext/ruby/extconf.rb'
+[ 2013-10-11 22:23:25.1075 16010/b737eb40 Pool2/Spawner.h:738 ]: [App 16043 stdout] checking for alloca.h... yes
+[ 2013-10-11 22:23:25.1335 16010/b737eb40 Pool2/Spawner.h:738 ]: [App 16043 stdout] checking for ruby/io.h... no
+[ 2013-10-11 22:23:25.5767 16010/b737eb40 Pool2/Spawner.h:738 ]: [App 16043 stdout] checking for rb_thread_io_blocking_region()... no
+[ 2013-10-11 22:23:25.5768 16010/b737eb40 Pool2/Spawner.h:738 ]: [App 16043 stdout] creating Makefile
+[ 2013-10-11 22:23:25.5807 16010/b733db40 Pool2/Spawner.h:159 ]: [App 16043 stderr] # make
+[ 2013-10-11 22:23:25.5897 16010/b737eb40 Pool2/Spawner.h:738 ]: [App 16043 stdout] gcc-4.6  -I. -I. -I/usr/lib/ruby/1.8/i686-linux -I/usr/lib/ruby/gems/1.8/gems/passenger-4.0.20/ext/ruby -DHAVE_ALLOCA_H -D_FORTIFY_SOURCE=2 -D_FILE_OFFSET_BITS=64 -D_FORTIFY_SOURCE=2 -fPIC -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -fno-strict-aliasing -g -g -O2  -fPIC  -g  -c /usr/lib/ruby/gems/1.8/gems/passenger-4.0.20/ext/ruby/passenger_native_support.c
+[ 2013-10-11 22:23:26.2629 16010/b737eb40 Pool2/Spawner.h:738 ]: [App 16043 stdout] gcc-4.6  -shared -o passenger_native_support.so passenger_native_support.o -L. -L/usr/lib -L. -Wl,-Bsymbolic-functions -Wl,-z,relro -rdynamic -Wl,-export-dynamic    -lruby1.8   -lpthread
+[ 2013-10-11 22:23:26.3620 16010/b733db40 Pool2/Spawner.h:159 ]: [App 16043 stderr] Compilation succesful.
+[ 2013-10-11 22:23:26.3621 16010/b733db40 Pool2/Spawner.h:159 ]: [App 16043 stderr] -------------------------------
+[ 2013-10-11 22:23:31.3436 16010/b737eb40 Pool2/SmartSpawner.h:301 ]: Preloader for /var/www/hello_world started on PID 16043, listening on unix:/tmp/passenger.1.0.16006/generation-0/backends/preloader.16043
